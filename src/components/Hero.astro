@@ -1,0 +1,45 @@
+---
+import SocialComponent from "./SocialComponent.astro";
+---
+
+<div class="xl:mx-80">
+    <div>
+        <h1 class="text-[#08F300] text-5xl flex xl:text-8xl">Android</h1>
+        <h1 class="text-white text-5xl font-bold flex justify-end xl:text-8xl">
+            Developer
+        </h1>
+    </div>
+    <p class="text-white mt-10 text-lg xl:text-2xl">
+        Hi, I'm an Android developer passionate about building intuitive and
+        high-performing mobile apps.
+    </p>
+    <div class="flex flex-row w-full mt-10">
+        <a
+            href="#projects"
+            class="bg-white text-md mr-3 font-semibold rounded-full hover:bg-[#08F300] w-[70%] flex justify-center"
+        >
+            <button>Projects</button>
+        </a>
+
+        <a
+            href="#projects"
+            class="bg-white hover:bg-[#08F300] rounded-full w-10 h-10"
+        >
+            <button>
+                <img src="arrow-right.svg" alt="go-to-projects" />
+            </button></a
+        >
+    </div>
+    <div class="flex flex-row items-center justify-start py-5">
+        <SocialComponent
+            link="https://github.com/GuidiUZ"
+            nameSocial="Github"
+            image="github.svg"
+        />
+        <SocialComponent
+            link="https://www.linkedin.com/in/guido-aranda-dev/"
+            nameSocial="LinkedIn"
+            image="linkedin.svg"
+        />
+    </div>
+</div>

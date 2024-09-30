@@ -1,0 +1,10 @@
+---
+const { image, techName } = Astro.props;
+---
+
+<div
+    class="bg-black border border-[#08F300] shadow-md shadow-[#08F300] rounded-lg p-2 m-2 items-center flex w-[120px] flex-col justify-center hover:scale-110"
+>
+    <img class="w-10 h-10" src={image} alt="techLogo" />
+    <p class="text-white text-center mt-1">{techName}</p>
+</div>

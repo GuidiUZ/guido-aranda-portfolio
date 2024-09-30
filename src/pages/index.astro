@@ -1,0 +1,51 @@
+---
+import AboutMe from "../components/AboutMe.astro";
+import Contact from "../components/Contact.astro";
+import Education from "../components/Education.astro";
+import Experience from "../components/Experience.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Technologies from "../components/Technologies.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Guido Aranda">
+	<main class="px-10">
+		<SectionContainer id="home" classAdd="py-20">
+			<Hero />
+		</SectionContainer>
+		<SectionContainer id="aboutMe" classAdd="py-20">
+			<AboutMe />
+		</SectionContainer>
+		<SectionContainer id="technologies" classAdd="py-1 lg:w-[740px]">
+			<Technologies />
+		</SectionContainer>
+		<SectionContainer id="education" classAdd="pt-20">
+			<h1 class="text-xl text-white mb-3 xl:text-center xl:text-2xl">
+				Education
+			</h1>
+			<Education />
+		</SectionContainer>
+		<SectionContainer id="experience" classAdd="py-20">
+			<h1 class="text-xl xl:text-2xl text-white mb-5 text-center">
+				Experience
+			</h1>
+			<Experience />
+		</SectionContainer>
+		<SectionContainer id="projects" classAdd="py-20">
+			<h1 class="text-white text-center text-xl xl:text-2xl font-bold">
+				Projects
+			</h1>
+			<Projects />
+		</SectionContainer>
+		<SectionContainer id="contact" classAdd="py-20">
+			<h1 class="text-white text-xl xl:text-2xl text-center mb-3">
+				Contact
+			</h1>
+			<Contact />
+		</SectionContainer>
+	</main>
+</Layout>
+
+<style></style>
